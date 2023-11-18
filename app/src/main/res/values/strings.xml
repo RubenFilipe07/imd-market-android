@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">imd-market-android</string>
+    <string name="titulo">IMDMARKET</string>
+    <string name="login_titulo">Login:</string>
+    <string name="senha_titulo">Senha:</string>
+    <string name="login_input">Login</string>
+    <string name="senha_input">Senha</string>
+    <string name="btn_entrar">ENTRAR</string>
+    <string name="alterar_login">Esqueci minha senha/login</string>
+
 </resources>
