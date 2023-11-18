@@ -7,6 +7,11 @@
     <string name="senha_input">Senha</string>
     <string name="btn_entrar">ENTRAR</string>
     <string name="alterar_login">Esqueci minha senha/login</string>
+    <string name="menu_mensagem">O que deseja fazer?</string>
+    <string name="menu_cadastrar_produto">Cadastrar produto</string>
+    <string name="menu_listar_produtos">Listar produtos</string>
+    <string name="menu_alterar_produto">Alterar produto</string>
+    <string name="menu_deletar_produto">Deletar produto</string>
 
     <string name="titulo_cadastro">CADASTRAR PRODUTO</string>
     <string name="codigo_produto_cadastro">Código produto:</string>

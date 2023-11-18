@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_margin="0dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/purple"
+        android:text="@string/menu_alterar_produto"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="@dimen/menu_btn_width"
+        android:layout_height="@dimen/menu_btn_height"
+        android:layout_margin="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/purple"
+        android:text="@string/menu_deletar_produto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="@dimen/menu_btn_width"
+        android:layout_height="@dimen/menu_btn_height"
+        android:layout_margin="0dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/purple"
+        android:text="@string/menu_cadastrar_produto"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="221dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="@dimen/menu_btn_width"
+        android:layout_height="@dimen/menu_btn_height"
+        android:layout_margin="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/purple"
+        android:text="@string/menu_listar_produtos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        tools:layout_editor_absoluteY="221dp" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:minHeight="?attr/actionBarSize"
+        android:scrollbarSize="0dp"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetStart="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:titleMargin="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_mensagem"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="245dp"
+        android:layout_height="155dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/shop"
+        tools:layout_editor_absoluteY="438dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
