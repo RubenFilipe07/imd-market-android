@@ -8,4 +8,16 @@
     <string name="btn_entrar">ENTRAR</string>
     <string name="alterar_login">Esqueci minha senha/login</string>
 
+    <string name="titulo_cadastro">CADASTRAR PRODUTO</string>
+    <string name="codigo_produto_cadastro">Código produto:</string>
+    <string name="nome_produto_cadastro">Nome produto:</string>
+    <string name="descricao_produto_cadastro">Descrição produto:</string>
+    <string name="estoque_produto_cadastro">Estoque:</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_limpar">Limpar</string>
+
+    <string name="titulo_deletar">DELETAR PRODUTO</string>
+
+
+
 </resources>
