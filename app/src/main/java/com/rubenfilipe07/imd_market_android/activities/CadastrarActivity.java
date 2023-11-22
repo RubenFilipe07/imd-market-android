@@ -50,8 +50,11 @@ public class CadastrarActivity extends AppCompatActivity {
             cadastro.put("descricao_produto", descricaoProdutoStr);
             cadastro.put("estoque", Integer.valueOf(estoqueProdutoStr));
             try {
-                banco.insert("produtos", null, cadastro);
-                Toast.makeText(this, "Produto cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
+                if (banco.insert("produtos", null, cadastro) != -1) {
+                    Toast.makeText(this, "Produto cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(this, "Erro ao inserir registro no banco de dados.", Toast.LENGTH_SHORT).show();
+                }
             } catch (Exception e) {
                 e.printStackTrace();
                 Toast.makeText(this, "Erro inesperado ao tentar cadastrar produto.", Toast.LENGTH_SHORT).show();
