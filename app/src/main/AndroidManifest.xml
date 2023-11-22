@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Imdmarketandroid"
         tools:targetApi="31">
         <activity
+            android:name=".activities.AlterarSenhaActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.CadastrarActivity"
             android:exported="false" />
         <activity

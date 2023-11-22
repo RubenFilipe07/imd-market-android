@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity">
+    tools:context=".activities.AlterarSenhaActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbar"
@@ -58,19 +58,17 @@
         app:layout_constraintVertical_bias="0.371" />
 
     <Button
-        android:id="@+id/btnEntrar"
+        android:id="@+id/btnAlterarSenha"
         android:layout_width="149dp"
         android:layout_height="67dp"
-        android:layout_marginTop="48dp"
         android:background="#FFFFFF"
-        android:onClick="login"
-        android:text="@string/btn_entrar"
+        android:text="@string/btn_alterar_senha"
         android:textSize="20sp"
         app:backgroundTint="@color/purple"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/inputSenha"
         app:layout_constraintVertical_bias="0.261" />
 
     <EditText
@@ -100,19 +98,18 @@
         app:layout_constraintVertical_bias="0.32" />
 
     <TextView
-        android:id="@+id/linkAlterarSenha"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="112dp"
-        android:text="@string/alterar_login"
-        android:textColor="@color/link_blue"
-        android:textColorHint="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="41dp"
+        android:text="@string/alterar_login_titulo"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAlterarSenha"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
