@@ -24,7 +24,7 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         carregarDados();
-        Button btnCadastrar = findViewById(R.id.btnSalvar);
+        Button btnCadastrar = findViewById(R.id.btnAlterar);
         btnCadastrar.setOnClickListener(v -> {
            Intent intent = new Intent(MenuActivity.this, CadastrarActivity.class);
            startActivity(intent);

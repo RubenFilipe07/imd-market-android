@@ -124,21 +124,8 @@
             app:layout_constraintTop_toBottomOf="@+id/textView11"
             app:layout_constraintVertical_bias="0.0" />
 
-        <EditText
-            android:id="@+id/editTextText7"
-            android:layout_width="372dp"
-            android:layout_height="48dp"
-            android:ems="10"
-            android:inputType="text"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.41"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13"
-            app:layout_constraintVertical_bias="0.0" />
-
         <Button
-            android:id="@+id/btnSalvar"
+            android:id="@+id/btnAlterar"
             android:layout_width="140dp"
             android:layout_height="49dp"
             android:layout_marginTop="48dp"
@@ -181,4 +168,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8"
             app:layout_constraintVertical_bias="0.465" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/estoque"
+            android:layout_width="364dp"
+            android:layout_height="51dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.361"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/materialToolbar"
+            app:layout_constraintVertical_bias="0.798" />
+</androidx.constraintlayout.widget.ConstraintLayout>

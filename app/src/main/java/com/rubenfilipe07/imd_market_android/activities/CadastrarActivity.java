@@ -30,7 +30,7 @@ public class CadastrarActivity extends AppCompatActivity {
         nomeProduto = findViewById(R.id.editTextText6);
         descricaoProduto = findViewById(R.id.editTextText8);
         estoqueProduto = findViewById(R.id.editTextNumber);
-        Button btrnSalvar = findViewById(R.id.btnSalvar);
+        Button btrnSalvar = findViewById(R.id.btnAlterar);
         btrnSalvar.setOnClickListener(v -> cadastrar());
         Button btnLimpar = findViewById(R.id.btnLimpar);
         btnLimpar.setOnClickListener(v -> limpar());
