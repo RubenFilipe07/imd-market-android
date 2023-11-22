@@ -4,7 +4,6 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -24,14 +23,14 @@ public class AlterarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alterar);
-        codigoProduto = findViewById(R.id.editTextText2);
-        nomeProduto = findViewById(R.id.editTextText6);
-        descricaoProduto = findViewById(R.id.editTextText8);
+        codigoProduto = findViewById(R.id.codigo);
+        nomeProduto = findViewById(R.id.nome);
+        descricaoProduto = findViewById(R.id.descricao);
         estoqueProduto = findViewById(R.id.estoque);
-        findViewById(R.id.btnAlterar).setOnClickListener(v -> {
+        findViewById(R.id.btnAbrirCadastroProduto).setOnClickListener(v -> {
                 alterar();
         });
-      findViewById(R.id.btnLimpar).setOnClickListener(v -> limpar());
+      findViewById(R.id.btnDeletarProduto).setOnClickListener(v -> limpar());
     }
 
     public void alterar() {

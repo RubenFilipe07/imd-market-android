@@ -26,13 +26,13 @@ public class CadastrarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastrar);
-        codigoProduto = findViewById(R.id.editTextText2);
-        nomeProduto = findViewById(R.id.editTextText6);
-        descricaoProduto = findViewById(R.id.editTextText8);
-        estoqueProduto = findViewById(R.id.editTextNumber);
-        Button btrnSalvar = findViewById(R.id.btnAlterar);
+        codigoProduto = findViewById(R.id.codigo);
+        nomeProduto = findViewById(R.id.nome);
+        descricaoProduto = findViewById(R.id.descricao);
+        estoqueProduto = findViewById(R.id.estoque);
+        Button btrnSalvar = findViewById(R.id.btnAbrirCadastroProduto);
         btrnSalvar.setOnClickListener(v -> cadastrar());
-        Button btnLimpar = findViewById(R.id.btnLimpar);
+        Button btnLimpar = findViewById(R.id.btnDeletarProduto);
         btnLimpar.setOnClickListener(v -> limpar());
     }
 

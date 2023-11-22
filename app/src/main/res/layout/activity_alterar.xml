@@ -86,7 +86,7 @@
             app:layout_constraintVertical_bias="0.707" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/codigo"
             android:layout_width="372dp"
             android:layout_height="48dp"
             android:ems="10"
@@ -112,7 +112,7 @@
             app:layout_constraintVertical_bias="0.257" />
 
         <EditText
-            android:id="@+id/editTextText6"
+            android:id="@+id/nome"
             android:layout_width="372dp"
             android:layout_height="48dp"
             android:ems="10"
@@ -125,7 +125,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/btnAlterar"
+            android:id="@+id/btnAbrirCadastroProduto"
             android:layout_width="140dp"
             android:layout_height="49dp"
             android:layout_marginTop="48dp"
@@ -141,7 +141,7 @@
             app:layout_constraintVertical_bias="0.913" />
 
         <Button
-            android:id="@+id/btnLimpar"
+            android:id="@+id/btnDeletarProduto"
             android:layout_width="140dp"
             android:layout_height="49dp"
             android:layout_marginTop="48dp"
@@ -157,7 +157,7 @@
             app:layout_constraintVertical_bias="0.913" />
 
         <EditText
-            android:id="@+id/editTextText8"
+            android:id="@+id/descricao"
             android:layout_width="372dp"
             android:layout_height="48dp"
             android:ems="10"

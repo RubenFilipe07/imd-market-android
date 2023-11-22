@@ -3,7 +3,6 @@ package com.rubenfilipe07.imd_market_android.activities;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -22,7 +21,7 @@ public class DeletarActivity extends AppCompatActivity {
 
         Button btnDeletar = findViewById(R.id.btnDeletar);
         EditText editTextCodigo = findViewById(R.id.editTextCodigo);
-        Button btnLimpar = findViewById(R.id.btnLimpar);
+        Button btnLimpar = findViewById(R.id.btnDeletarProduto);
 
         btnLimpar.setOnClickListener(v -> limpar());
 

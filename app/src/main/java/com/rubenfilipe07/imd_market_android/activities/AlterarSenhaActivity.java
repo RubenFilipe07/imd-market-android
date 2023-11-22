@@ -33,17 +33,21 @@ public class AlterarSenhaActivity extends AppCompatActivity {
 
         EditText inputLogin = findViewById(R.id.inputLogin);
         EditText inputSenha = findViewById(R.id.inputSenha);
+        if (inputLogin.getText().toString().isEmpty() || inputSenha.getText().toString().isEmpty()) {
+            Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            String loginInput = inputLogin.getText().toString();
+            String senhaInput = inputSenha.getText().toString();
 
-        String loginInput = inputLogin.getText().toString();
-        String senhaInput = inputSenha.getText().toString();
-
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("login", loginInput);
-        editor.putString("senha", senhaInput);
-        editor.commit();
-        Toast.makeText(this, "Credenciais alteradas com sucesso", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString("login", loginInput);
+            editor.putString("senha", senhaInput);
+            editor.commit();
+            Toast.makeText(this, "Credenciais alteradas com sucesso", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
 
     }
 

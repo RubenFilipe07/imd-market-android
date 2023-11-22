@@ -24,23 +24,23 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         carregarDados();
-        Button btnCadastrar = findViewById(R.id.btnAlterar);
+        Button btnCadastrar = findViewById(R.id.btnAbrirCadastroProduto);
         btnCadastrar.setOnClickListener(v -> {
            Intent intent = new Intent(MenuActivity.this, CadastrarActivity.class);
            startActivity(intent);
         });
-        Button btnAlterar = findViewById(R.id.button5);
+        Button btnAlterar = findViewById(R.id.btnAlterarProduto);
         btnAlterar.setOnClickListener(v -> {
             Intent intent = new Intent(MenuActivity.this, AlterarActivity.class);
             startActivity(intent);
         });
-        Button btnListar = findViewById(R.id.button2);
+        Button btnListar = findViewById(R.id.btnAbrirListaProduto);
         btnListar.setOnClickListener(v -> {
             Intent intent = new Intent(MenuActivity.this, ListarActivity.class);
             intent.putParcelableArrayListExtra("produtos", new ArrayList<>(produtos));
             startActivity(intent);
         });
-        Button btnDeletar = findViewById(R.id.btnLimpar);
+        Button btnDeletar = findViewById(R.id.btnDeletarProduto);
         btnDeletar.setOnClickListener(v -> {
             Intent intent = new Intent(MenuActivity.this, DeletarActivity.class);
             startActivity(intent);
