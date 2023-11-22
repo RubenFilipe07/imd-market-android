@@ -26,6 +26,7 @@
     <string name="titulo_deletar">DELETAR PRODUTO</string>
     <string name="titulo_alteracao">ALTERAR PRODUTO</string>
     <string name="btn_alterar">Alterar</string>
+    <string name="btn_deletar">Deletar</string>
     <string name="titulo_listar">LISTA DE PRODUTOS</string>
     <string name="btn_voltar">Voltar</string>
     <!-- TODO: Remove or change this placeholder text -->
