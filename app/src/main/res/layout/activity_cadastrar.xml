@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.cadastroFragment">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    tools:context=".activities.CadastrarActivity">
 
         <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/materialToolbar5"
+            android:id="@+id/materialToolbar"
             android:layout_width="409dp"
             android:layout_height="wrap_content"
             android:background="@color/orange"
@@ -126,21 +122,8 @@
             app:layout_constraintTop_toBottomOf="@+id/textView11"
             app:layout_constraintVertical_bias="0.0" />
 
-        <EditText
-            android:id="@+id/editTextText7"
-            android:layout_width="372dp"
-            android:layout_height="48dp"
-            android:ems="10"
-            android:inputType="text"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.41"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13"
-            app:layout_constraintVertical_bias="0.0" />
-
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnSalvar"
             android:layout_width="140dp"
             android:layout_height="49dp"
             android:layout_marginTop="48dp"
@@ -183,5 +166,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8"
             app:layout_constraintVertical_bias="0.465" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="364dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:inputType="number|numberSigned"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.781" />
+</androidx.constraintlayout.widget.ConstraintLayout>
