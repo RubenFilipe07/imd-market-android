@@ -91,4 +91,11 @@ public class Produto implements Parcelable {
         parcel.writeInt(estoque);
     }
 
+    @NonNull
+    @Override
+    public String toString() {
+       String produtoStr = String.format("Código: %s \nNome: %s \nDescrição: %s \nEstoque: %d", codigo_produto,
+               nome_produto, descricao_produto, estoque);
+       return produtoStr;
+    }
 }

@@ -1,5 +1,6 @@
 package com.rubenfilipe07.imd_market_android.util;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,11 +25,19 @@ public class ListViewAdapter extends ArrayAdapter<Produto> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
         TextView itemView = convertView.findViewById(R.id.itemView);
-        TextView subitemView = convertView.findViewById(R.id.subitemVIew);
         Produto item = getItem(position);
         itemView.setText(item.getNomeProduto() + " (" + item.getCodigoProduto() + ")");
-        subitemView.setText("Descrição: " + item.getDescricaoProduto() + "\nEstoque: " + item.getEstoque());
+        itemView.setOnClickListener(v ->  showAlert("Detalhes do Produto", item.toString()));
         return convertView;
+    }
+
+    public void showAlert(String titulo, String detalhes) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        builder.setTitle(titulo);
+        builder.setMessage(detalhes);
+        builder.setPositiveButton("OK", (d, i) -> d.dismiss());
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 
 }
