@@ -1,11 +1,11 @@
-package com.rubenfilipe07.imd_market_android;
+package com.rubenfilipe07.imd_market_android.domain;
 
 public class Produto {
 
-    String codigo_produto;
-    String nome_produto;
-    String descricao_produto;
-    int estoque;
+    private String codigo_produto;
+    private String nome_produto;
+    private String descricao_produto;
+    private int estoque;
 
     public String getCodigoProduto() {
         return codigo_produto;

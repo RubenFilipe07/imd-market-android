@@ -1,4 +1,4 @@
-package com.rubenfilipe07.imd_market_android;
+package com.rubenfilipe07.imd_market_android.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import com.rubenfilipe07.imd_market_android.R;
 
 public class MainActivity extends AppCompatActivity {
     private SQLiteDatabase bancoDados;
@@ -17,18 +19,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         inicializaSharedPreferences();
-        criarBancoDados();
-
     }
 
-    public void criarBancoDados() {
-        try {
-            bancoDados = openOrCreateDatabase("produtos", MODE_PRIVATE, null);
-            bancoDados.execSQL("CREATE TABLE IF NOT EXISTS produtos (id INTEGER PRIMARY KEY AUTOINCREMENT, codigo_produto VARCHAR, nome_produto VARCHAR, descricao_produto VARCHAR, estoque INTEGER)");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
     public void login(View view) {
         EditText inputLogin = findViewById(R.id.inputLogin);

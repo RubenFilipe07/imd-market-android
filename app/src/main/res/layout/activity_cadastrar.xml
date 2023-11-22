@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cadastroFragment">
+    tools:context=".fragments.cadastroFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/titulo_alteracao"
+            android:text="@string/titulo_cadastro"
             android:textSize="26sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -145,7 +145,7 @@
             android:layout_height="49dp"
             android:layout_marginTop="48dp"
             android:background="#FFFFFF"
-            android:text="@string/btn_alterar"
+            android:text="@string/btn_salvar"
             android:textSize="20sp"
             app:backgroundTint="@color/purple"
             app:layout_constraintBottom_toBottomOf="parent"
