@@ -29,7 +29,7 @@ public class MenuActivity extends AppCompatActivity {
             Intent intent = new Intent(MenuActivity.this, ListarActivity.class);
             startActivity(intent);
         });
-        Button btnDeletar = findViewById(R.id.button4);
+        Button btnDeletar = findViewById(R.id.btnLimpar);
         btnDeletar.setOnClickListener(v -> {
             Intent intent = new Intent(MenuActivity.this, DeletarActivity.class);
             startActivity(intent);
