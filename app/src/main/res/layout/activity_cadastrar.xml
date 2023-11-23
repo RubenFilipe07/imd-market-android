@@ -88,7 +88,7 @@
             android:layout_width="372dp"
             android:layout_height="48dp"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.41"
@@ -133,7 +133,7 @@
             app:backgroundTint="@color/purple"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintHorizontal_bias="0.2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.913" />
@@ -159,7 +159,7 @@
             android:layout_width="372dp"
             android:layout_height="48dp"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="textMultiLine"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.41"
@@ -172,11 +172,11 @@
             android:layout_width="364dp"
             android:layout_height="42dp"
             android:ems="10"
-            android:inputType="number|numberSigned"
+            android:inputType="number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.34"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView5"
-            app:layout_constraintVertical_bias="0.781" />
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
